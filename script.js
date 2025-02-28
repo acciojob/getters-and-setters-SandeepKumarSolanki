@@ -1,48 +1,46 @@
-//complete this code
 class Person {
-	constructor(name , age){
-		this.name = name;
-		this.age = age;
-	}
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
 
-	getName(){
-		return this.name;
-	}
+  getName() {
+    return this.name;
+  }
 
-	setAge(age){
-		this.age = age;
-	}
+  setAge(age) {
+    this.age = age;
+  }
 }
 
 class Student extends Person {
-	constructor(name , age){
-		super(name , age);
-		this.personName = super.getName();
-	}
-	study(){
-		
-		console.log(`${this.personName} is studying`)
-	}
+  constructor(name, age) {
+    super(name, age); // Call the parent constructor to initialize name and age
+    this.personName = super.getName(); // Store the person's name
+  }
+
+  study() {
+    console.log(`${this.personName} is studying`);
+  }
 }
 
 class Teacher extends Person {
-	constructor(name ,age){
-		super(name , age);
-		this.personName = super.getName();
-	}
-	teach(){
-		console.log(`${this.personName} is teaching`);
-	}
+  constructor(name, age) {
+    super(name, age); // Call the parent constructor to initialize name and age
+    this.personName = super.getName(); // Store the person's name
+  }
+
+  teach() {
+    console.log(`${this.personName} is teaching`);
+  }
 }
 
 // Creating a Person instance
 const person = new Person("John", 25);
 console.log(person.name);  // Output: John
 
-person.age = 30;  // Using the setter to change the age
+person.setAge(30);  // Using the setter to change the age
 console.log(person.age);  // Output: 30
-person.setAge(30);
-console.log(perosn.getAge())
 
 // Creating a Student instance
 const student = new Student("Alice", 22);
