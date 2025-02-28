@@ -15,17 +15,23 @@ class Person {
 }
 
 class Student extends Person {
-	let personName = super.getName();
+	constructor(name , age){
+		super(name , age);
+		this.personName = super.getName();
+	}
 	study(){
 		
-		console.log(`${personName} is studying`)
+		console.log(`${this.personName} is studying`)
 	}
 }
 
 class Teacher extends Person {
-	let personName = super.getName();
+	constructor(name ,age){
+		super(name , age);
+		this.personName = super.getName();
+	}
 	teach(){
-		console.log(`${personName} is teaching`);
+		console.log(`${this.personName} is teaching`);
 	}
 }
 
