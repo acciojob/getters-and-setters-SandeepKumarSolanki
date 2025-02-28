@@ -41,6 +41,7 @@ console.log(person.name);  // Output: John
 
 person.setAge(30);  // Using the setter to change the age
 console.log(person.age);  // Output: 30
+console.log(person.name); // Output: John (name remains unchanged)
 
 // Creating a Student instance
 const student = new Student("Alice", 22);
