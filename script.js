@@ -11,6 +11,10 @@ class Person {
   setAge(age) {
     this.age = age;
   }
+
+	getAge(){
+		return this.age;
+	}
 }
 
 class Student extends Person {
