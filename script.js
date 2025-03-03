@@ -18,10 +18,6 @@ class Person {
 }
 
 class Student extends Person {
-  constructor(name, age) {
-    super(name, age); // Call the parent constructor to initialize name and age
-    this.personName = super.getName(); // Store the person's name
-  }
 
   study() {
     console.log(`${this.personName} is studying`);
@@ -29,10 +25,6 @@ class Student extends Person {
 }
 
 class Teacher extends Person {
-  constructor(name, age) {
-    super(name, age); // Call the parent constructor to initialize name and age
-    this.personName = super.getName(); // Store the person's name
-  }
 
   teach() {
     console.log(`${this.personName} is teaching`);
