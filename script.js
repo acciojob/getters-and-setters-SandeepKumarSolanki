@@ -1,11 +1,13 @@
+
+
 class Person {
+	
   constructor(name, age) {
     this._name = name;
     this._age = age;
   }
-
-  // Getter and Setter for name
-  get name() {
+	
+ get name() {
     return this._name;
   }
 
@@ -13,7 +15,6 @@ class Person {
     this._name = name;
   }
 
-  // Getter and Setter for age
   get age() {
     return this._age;
   }
@@ -21,6 +22,7 @@ class Person {
   set age(age) {
     this._age = age;
   }
+	
 }
 
 class Student extends Person {
@@ -28,10 +30,10 @@ class Student extends Person {
     super(name, age);
   }
 
-  // Method for Student to study
   study() {
     console.log(`${this.name} is studying`);
   }
+	
 }
 
 class Teacher extends Person {
@@ -39,11 +41,11 @@ class Teacher extends Person {
     super(name, age);
   }
 
-  // Method for Teacher to teach
   teach() {
     console.log(`${this.name} is teaching`);
   }
 }
+
 
 // Do not change the code below this line
 window.Person = Person;
